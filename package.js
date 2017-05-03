@@ -8,7 +8,7 @@ Package.describe({
 Package.onUse(function (api) {
   api.use('accounts-base@1.3.0')
   api.imply('accounts-base')
-  api.use('accounts-ui', ['client', 'server'], {weak: true})
+  api.use('accounts-ui@1.1.8', ['client', 'server'], {weak: true})
   api.mainModule('client.js', 'client')
   api.mainModule('server.js', 'server')
 })
